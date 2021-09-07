@@ -1,0 +1,22 @@
+{
+  "name": "erix-javascript-utils-root",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^27.1.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricStratigakis/erix-javascript-utils.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EricStratigakis/erix-javascript-utils/issues"
+  },
+  "homepage": "https://github.com/EricStratigakis/erix-javascript-utils#readme"
+}
