@@ -19,7 +19,7 @@ jobs:
 workflows:
   main:
     jobs:
-      # - node/test
-      - npm_publish #:
-        # requires:
-        #   - node/test
+      - node/test
+      - npm_publish:
+        requires:
+          - node/test
