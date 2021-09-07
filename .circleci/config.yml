@@ -3,7 +3,18 @@ version: 2.1
 orbs:
   node: circleci/node@4.7.0
 
+jobs:
+  pypi_publish:
+  executor: node/default
+  steps:
+    - checkout # checkout source code to working directory
+    - run:
+        command: ./npm_publish.sh
+
 workflows:
   test-and-deploy:
     jobs:
       - node/test
+      - npm_publish:
+          requires:
+            - node/test
