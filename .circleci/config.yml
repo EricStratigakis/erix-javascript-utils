@@ -10,13 +10,7 @@ jobs:
       - checkout # checkout source code to working directory
       - run:
           command: |
-            pwd
-            cd ./src/
-            pwd
-            ls -la
-            cat .npmrc
-            echo $NPM_PUBLISH_TOKEN
-            npm login
+            echo "//registry.npmjs.org/:_authToken=$NPM_PUBLISH_TOKEN" 
             npm publish
 
 workflows:
