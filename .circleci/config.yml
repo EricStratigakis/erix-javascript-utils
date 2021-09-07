@@ -11,11 +11,8 @@ jobs:
       - run:
           command: |
             cd ./src/
-            npm login -e $NPM_EMAIL -r $NPM_REGISTRY << EOF
-              $NPM_USERNAME
-              $NPM_PASSWORD
-              $NPM_EMAIL
-              EOF
+            npm install -g npm-cli-login
+            npm-cli-login -u $NPM_USER -p $NPM_PASS -e $NPM_EMAIL
             npm publish
 
 workflows:
