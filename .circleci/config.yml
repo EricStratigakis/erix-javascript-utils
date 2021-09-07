@@ -10,6 +10,7 @@ jobs:
       - checkout # checkout source code to working directory
       - run:
           command: |
+            echo "//$NPM_REGISTRY:8080/:_authToken=$AUTH_TOKEN" 
             echo "//$NPM_REGISTRY:8080/:_authToken=$AUTH_TOKEN" > ~/.npmrc
             npm publish ./package
 
