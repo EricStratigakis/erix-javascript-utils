@@ -1,19 +1,23 @@
 {
   "name": "erix-javascript-utils",
-  "version": "0.1.4",
-  "description": "erix utils",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "erix-javascript-utils",
+  "main": "test.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EricStratigakis/erix-javascript-utils.git"
   },
-  "author": "Eric Stratigakis",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/EricStratigakis/erix-javascript-utils/issues"
   },
-  "homepage": "https://github.com/EricStratigakis/erix-javascript-utils#readme"
+  "homepage": "https://github.com/EricStratigakis/erix-javascript-utils#readme",
+  "devDependencies": {
+    "jest": "^27.1.0"
+  }
 }
