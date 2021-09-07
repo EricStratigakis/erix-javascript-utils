@@ -10,9 +10,7 @@ jobs:
       - checkout # checkout source code to working directory
       - run:
           command: |
-            npm init -y
-            npm i npm-cli-login
-            npm-cli-login -u NPM_USER -p NPM_PASS -e NPM_EMAIL
+            echo "//$NPM_REGISTRY:8080/:_authToken=$AUTH_TOKEN" > ~/.npmrc
             npm publish ./package
 
 workflows:
