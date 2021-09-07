@@ -11,8 +11,7 @@ jobs:
       - run:
           command: |
             cd ./src/
-            ls -la
-            npm-cli-login -u $NPM_USER -p $NPM_PASS -e $NPM_EMAIL
+            npm login -u $NPM_USER -p $NPM_PASS -e $NPM_EMAIL
             npm publish
 
 workflows:
