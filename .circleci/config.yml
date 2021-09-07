@@ -11,7 +11,11 @@ jobs:
       - run:
           command: |
             cd ./src/
-            echo -e '$NPM_USERNAME\n$NPM_PASSWORD\n$NPM_EMAIL' | npm login -e $NPM_EMAIL -r $NPM_REGISTRY
+            npm login -e $NPM_EMAIL -r $NPM_REGISTRY << EOF
+              $NPM_USERNAME
+              $NPM_PASSWORD
+              $NPM_EMAIL
+              EOF
             npm publish
 
 workflows:
