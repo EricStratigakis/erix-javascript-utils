@@ -13,6 +13,7 @@ jobs:
             pwd
             cd ./src/
             pwd
+            ls -la
             echo $NPM_PUBLISH_TOKEN
             npm login
             npm publish
