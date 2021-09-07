@@ -10,8 +10,7 @@ jobs:
       - checkout # checkout source code to working directory
       - run:
           command: |
-            cd ./package/
-            npm publish
+            npm publish ./package
 
 workflows:
   main:
