@@ -14,7 +14,7 @@ jobs:
             npm publish
 
 workflows:
-  test-and-deploy:
+  main:
     jobs:
       - node/test
       - npm_publish:
