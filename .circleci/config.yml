@@ -10,7 +10,8 @@ jobs:
       - checkout # checkout source code to working directory
       - run:
           command: |
-            npm login -u $NPM_USERNAME -p $NPM_PASSWORD -e $NPM_EMAIL
+            npm i npm-cli-login
+            npm-cli-login -u $NPM_USERNAME -p $NPM_PASSWORD -e $NPM_EMAIL
             npm publish
 
 workflows:
