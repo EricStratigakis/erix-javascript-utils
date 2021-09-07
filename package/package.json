@@ -1,8 +1,8 @@
 {
   "name": "erix-javascript-utils",
-  "version": "1.0.0",
-  "description": "erix-javascript-utils",
-  "main": "test.js",
+  "version": "1.2.3",
+  "description": "erix utils",
+  "main": "index.js",
   "scripts": {
     "test": "jest"
   },
@@ -10,14 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/EricStratigakis/erix-javascript-utils.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Eric Stratigakis",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/EricStratigakis/erix-javascript-utils/issues"
   },
   "homepage": "https://github.com/EricStratigakis/erix-javascript-utils#readme",
-  "devDependencies": {
-    "jest": "^27.1.0"
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }
