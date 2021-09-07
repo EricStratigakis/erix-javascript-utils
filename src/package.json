@@ -1,6 +1,6 @@
 {
   "name": "erix-javascript-utils",
-  "version": "0.2.0",
+  "version": "1.2.0",
   "description": "erix utils",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/EricStratigakis/erix-javascript-utils/issues"
   },
-  "homepage": "https://github.com/EricStratigakis/erix-javascript-utils#readme"
+  "homepage": "https://github.com/EricStratigakis/erix-javascript-utils#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
 }
