@@ -1,6 +1,6 @@
 {
   "name": "erix-javascript-utils",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "erix utils",
   "main": "index.js",
   "scripts": {
