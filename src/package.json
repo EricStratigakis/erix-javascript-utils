@@ -1,0 +1,19 @@
+{
+  "name": "erix-javascript-utils",
+  "version": "0.2.0",
+  "description": "erix utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricStratigakis/erix-javascript-utils.git"
+  },
+  "author": "Eric Stratigakis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EricStratigakis/erix-javascript-utils/issues"
+  },
+  "homepage": "https://github.com/EricStratigakis/erix-javascript-utils#readme"
+}
