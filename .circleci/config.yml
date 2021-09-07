@@ -10,7 +10,6 @@ jobs:
       - checkout # checkout source code to working directory
       - run:
           command: |
-            cd ./src/
             npm login -u $NPM_USERNAME -p $NPM_PASSWORD -e $NPM_EMAIL
             npm publish
 
