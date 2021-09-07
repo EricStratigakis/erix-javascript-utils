@@ -10,6 +10,7 @@ jobs:
       - checkout # checkout source code to working directory
       - run:
           command: |
+          cd ./package/
             pwd
             ls -la
 workflows:
