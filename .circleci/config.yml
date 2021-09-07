@@ -7,7 +7,7 @@ jobs:
   npm_publish:
     executor: node/default
     steps:
-      - checkout # checkout source code to working directory
+      - checkout # checkout source code to working directorys
       - run:
           command: |
             cd ./package
