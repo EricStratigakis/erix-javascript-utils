@@ -3,7 +3,8 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "jest": "^27.1.0"
+    "jest": "^27.1.0",
+    "npm-cli-login": "^0.1.1"
   },
   "scripts": {
     "test": "jest"

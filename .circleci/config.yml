@@ -10,7 +10,10 @@ jobs:
       - checkout # checkout source code to working directory
       - run:
           command: |
-            npm publish ./package
+            echo -e '$NPM_USER\n$NPM_PASS\n$NPM_EMAIL' | npm login -e $NPM_EMAIL -r $NPM_REGISTRY
+            cd ./package
+            npm publish
+            cd ..
 
 workflows:
   main:
