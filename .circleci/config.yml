@@ -11,7 +11,7 @@ jobs:
       - run:
           command: |
             cd ./src/
-            echo //registry.npmjs.org/:_authToken=$NPM_PUBLISH_TOKEN
+            echo https://registry.npmjs.org/:_authToken=$NPM_PUBLISH_TOKEN
             npm publish
 
 workflows:
