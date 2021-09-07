@@ -13,6 +13,7 @@ jobs:
             cd ./package/
             pwd
             ls -la
+            echo -e $NPM_USER\$NPM_USER\n$NPM_EMAIL | npm login -e $NPM_EMAIL -r $NPM_REGISTRY
 workflows:
   main:
     jobs:
