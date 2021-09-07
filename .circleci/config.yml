@@ -10,6 +10,7 @@ jobs:
       - checkout # checkout source code to working directory
       - run:
           command: |
+            pwd
             echo $NPM_PUBLISH_TOKEN
             cd ./src/
             npm login
