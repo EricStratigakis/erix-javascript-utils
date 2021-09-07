@@ -11,15 +11,16 @@ jobs:
       - run:
           command: |
             pwd
-            echo $NPM_PUBLISH_TOKEN
             cd ./src/
+            pwd
+            echo $NPM_PUBLISH_TOKEN
             npm login
             npm publish
 
 workflows:
   main:
     jobs:
-      - node/test
-      - npm_publish:
-          requires:
-            - node/test
+      # - node/test
+      - npm_publish #:
+        # requires:
+        #   - node/test
