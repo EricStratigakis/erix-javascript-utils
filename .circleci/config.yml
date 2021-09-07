@@ -11,8 +11,8 @@ jobs:
       - run:
           command: |
             cd ./package
-            cat ./.npmrc
-            npm login --registry https://registry.npmjs.org/
+            npm install -g npm-cli-login
+            npm-cli-login
             npm publish
             cd ..
 
