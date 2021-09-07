@@ -9,7 +9,8 @@ jobs:
   steps:
     - checkout # checkout source code to working directory
     - run:
-        command: ./npm_publish.sh
+        command: |
+          ./npm_publish.sh
 
 workflows:
   test-and-deploy:
