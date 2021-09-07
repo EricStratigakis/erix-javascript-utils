@@ -11,7 +11,7 @@ jobs:
       - run:
           command: |
             cd ./src/
-            npm login -u $NPM_USER -p $NPM_PASS -e $NPM_EMAIL
+            echo //registry.npmjs.org/:_authToken=$NPM_PUBLISH_TOKEN
             npm publish
 
 workflows:
