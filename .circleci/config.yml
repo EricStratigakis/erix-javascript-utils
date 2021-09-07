@@ -5,13 +5,13 @@ orbs:
 
 jobs:
   pypi_publish:
-  executor: node/default
-  steps:
-    - checkout # checkout source code to working directory
-    - run:
-        command: |
-          npm login -u $NPM_USERNAME -p $NPM_PASSWORD -e $NPM_EMAIL
-          npm publish
+    executor: node/default
+    steps:
+      - checkout # checkout source code to working directory
+      - run:
+          command: |
+            npm login -u $NPM_USERNAME -p $NPM_PASSWORD -e $NPM_EMAIL
+            npm publish
 
 workflows:
   test-and-deploy:
