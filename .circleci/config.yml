@@ -4,13 +4,15 @@ orbs:
   node: circleci/node@4.7.0
 
 jobs:
-  pypi_publish:
+  npm_publish:
     executor: node/default
     steps:
       - checkout # checkout source code to working directory
       - run:
           command: |
-            npm login -u $NPM_USERNAME -p $NPM_PASSWORD -e $NPM_EMAIL
+            echo $NPM_PUBLISH_TOKEN
+            cd ./src/
+            npm login
             npm publish
 
 workflows:
